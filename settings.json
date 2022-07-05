@@ -1,0 +1,14 @@
+{
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+      ],
+      "liveSassCompile.settings.formats": [
+        {
+          "format": "expanded",         /*      COMPRESSED es la que pesa menos     */
+          "extensionName": ".css",
+          "savePath": "/CSS"
+        }
+      ],
+      "liveSassCompile.settings.generateMap": false
+}

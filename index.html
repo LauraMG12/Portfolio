@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="Laura Mañogil Portfolio" content="Laura Mañogil, Full stack developer own portfolio" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ruthie&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="CSS/main.css">
+        
+        <title>Portfolio Laura Mañogil González</title>
+        <link rel="shortcut icon" href="Images/header/logo-without-background.png" type="image/x-icon">
+
+        <style>
+            ::-webkit-scrollbar {
+                width: 1.5rem;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: rgb(211, 211, 211);
+
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: rgb(2, 85, 110);
+            }
+        
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: rgb(2, 65, 85)
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <header class="navigation">
+            <div class="logo">L</div>      
+            <ul class="navigation__list">
+                <li><a href="#home" class="navigation__list--item">
+                    <p class="navigation__list--item-visible1 navigation__list--item-visibleBlue">Home</p>
+                    <p class="navigation__list--item-invisible">Home</p>
+                </a></li>                        
+                <li><a href="#technologies" class="navigation__list--item">
+                    <p class="navigation__list--item-visible1 ">Technologies</p>
+                    <p class="navigation__list--item-invisible">Technologies</p>
+                </a></li>                
+                <li><a href="#projects" class="navigation__list--item">
+                    <p class="navigation__list--item-visible1">Projects</p>
+                    <p class="navigation__list--item-invisible">Projects</p>
+                </a></li>
+                <li><a href="#about-me" class="navigation__list--item">
+                    <p class="navigation__list--item-visible1">About me</p>
+                    <p class="navigation__list--item-invisible">About me</p>
+                </a></li>
+                <li><a href="#contact" class="navigation__list--item">
+                    <p class="navigation__list--item-visible1">Contact</p>
+                    <p class="navigation__list--item-invisible">Contact</p>
+                </a></li>
+                <li class="navigation__list--flags">
+                    <img class="flag spanish" src="Images/header/spain.png" alt="spanish flag">
+                    <img class="flag english hidden" src="Images/header/united-kingdom.png"  alt="UK flag">
+                </li>
+
+                <li class="btnMenu navigation__list--item navigation__list--item-btn">
+                    <button class="navigation__list--button1 ">&#9776;</button>
+                </li>                
+            </ul>
+
+            <div class="navigation__background">
+                <ul class="navigation__list2">
+                    <li class="navigation__item"><a href="#home" class="navigation__link"><span>01</span><span class='hiddenNav'>Home</span></a></li>
+                    <li class="navigation__item"><a href="#technologies" class="navigation__link"><span>02</span><span class='hiddenNav'>Technologies</span></a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link"><span>03</span><span class='hiddenNav'>Projects</span></a></li>
+                    <li class="navigation__item"><a href="#about-me" class="navigation__link"><span>04</span><span class='hiddenNav'>About me</span></a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link"><span>05</span><span class='hiddenNav'>Contact</span></a></li>
+                </ul>
+            </div>
+
+        </header>
+
+
+        <main class="container">
+            <div class="blackDiv"></div>
+            <section id="home" class="section section--0 home">
+                <h1 class="heading--primary">
+                    <span class="heading--primary--main">Laura Mañogil González</span>
+                    <span class="heading--primary--sub">&lsaquo; Frontend developer &rsaquo;</span> 
+                </h1>
+                <a href="#contact" class="home--btn btn btn--blue">Contact me</a>
+            </section>
+
+
+            <section id="technologies" class="section section section--hidden section--1 hidden technologies">            
+                <h2 class="heading--secondary section--trnsl">Technologies</h2>
+                    <div class="technologies__chart ">        
+                        <h3 class="heading--tertiary heading--tertiary-dark technologies__chart-title">Front end</h3>
+                        <div class="technologies__chart-container">
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" />
+                                <h4 class="technologies__chart-label">HTML5</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo" />
+                                <h4 class="technologies__chart-label">CSS3</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="SASS logo"/>
+                                <h4 class="technologies__chart-label">SASS</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo"/>
+                                <h4 class="technologies__chart-label">JavaScript</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="VueJS logo" />
+                                <h4 class="technologies__chart-label">VueJS</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" alt="NuxtJS logo" />
+                                <h4 class="technologies__chart-label">NuxtJS</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" />
+                                <h4 class="technologies__chart-label">TypeScript</h3>
+                            </div>
+                            <div>
+                                <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="GraphQL logo" />
+                                <h4 class="technologies__chart-label">GraphQL</h3>
+                            </div>
+                        </div>
+                    </div>
+                <div class="technologies__chart">    
+                    <h3 class="heading--tertiary heading--tertiary-dark technologies__chart-title">Back end</h3>
+                    <div class="technologies__chart-container">
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"  alt="Python logo"/>
+                            <h4 class="technologies__chart-label">Python</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS logo" />
+                            <h4 class="technologies__chart-label">NodeJS</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"  alt="Express logo"/>
+                            <h4 class="technologies__chart-label">Express</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" alt="PHP logo" />
+                            <h4 class="technologies__chart-label">PHP</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg"  alt="Laravel logo"/>
+                            <h4 class="technologies__chart-label">Laravel</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="technologies__chart">    
+                    <h3 class="heading--tertiary heading--tertiary-dark technologies__chart-title">Others</h3>
+                    <div class="technologies__chart-container">
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"  alt="Jest logo"/>
+                            <h4 class="technologies__chart-label">Jest</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo"/>
+                            <h4 class="technologies__chart-label">Git</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM logo" />
+                            <h4 class="technologies__chart-label">NPM</h3>
+                        </div>
+                        
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg" alt="Docker logo" />
+                            <h4 class="technologies__chart-label">Docker</h3>
+                        </div>
+                        <div>
+                            <img class="technologies__chart-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"  alt="C++ logo"/>
+                            <h4 class="technologies__chart-label">C++</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section section--hidden section--1 hidden skills">
+                <div class="skills__container">
+                    <div class="skills__chart ">
+                        <h3 class="heading--tertiary skill ">Methodical</h3>
+                        <img class="skills__chart-image" src="Images/undraw svg/undraw_thought_process_re_om58.svg"  alt="Methodical icon">
+                    </div>
+                    <div class="skills__chart ">
+                        <h3 class="heading--tertiary skill">Careful</h3>
+                        <img class="skills__chart-image" src="Images/undraw svg/undraw_details_8k13.svg" alt="Careful icon">
+                    </div>
+                    <div class="skills__chart ">
+                        <h3 class="heading--tertiary skill">Teamworker</h3>
+                        <img class="skills__chart-image" src="Images/undraw svg/undraw_teamwork_hpdk.svg" alt="Teamworker icon">
+                    </div>
+                    <div class="skills__chart ">
+                        <h3 class="heading--tertiary skill">Resolutive</h3>
+                        <img class="skills__chart-image" src="Images/undraw svg/undraw_solution_mindset_-34-bi.svg" alt="Resolutive icon">
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="overlay hidden"></div>
+            <section id="projects" class="section section--hidden section--2 hidden projects">                                 
+                <h2 class="heading--secondary section--trnsl">Projects</h2>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/portfolio.JPG" alt="Portfolio image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Portfolio</h1></div>
+                    <p class="modal--info">
+                        This is my first own project, about my profesional career as a web developer focused on showing my knowledge and experience.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                        <li class="modal__list--item">JavaScript</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Portfolio" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/natours.JPG" alt="Natours image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Natours</h1></div>
+                    <p class="modal--info">
+                        Natours is a web page that has some offers focused on outdoor activities. It was developed as a practice of a front-end development course based on HTML and advanced CSS languages.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Natours" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/nexter.JPG" alt="Nexter image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Nexter</h1></div>
+                    <p class="modal--info">
+                        This project consists in a property company web page. It was developed as a practice of a front-end development course based on HTML and advanced CSS languages.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Nexter" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/guess.JPG" alt="Guess-my-number image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Guess my number</h1></div>
+                    <p class="modal--info">
+                        This is a game related to guess a random number. It was developed as a practice of a front-end development course based on JavaScript.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">JavaScript</li>
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Guess-my-number" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/pig.JPG" alt="Pig-game image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Pig game</h1></div>
+                    <p class="modal--info">
+                        This is a two players roll dice game. It was developed as a practice of a front-end development course based on JavaScript.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">JavaScript</li>
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Pig-game" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <div class="projects__card show-modal">
+                    <img class="projects__image" src="Images/projects/bankist.jpg" alt="Bankist image">
+                    <div class="projects__label">View project</div>
+                </div>
+                <div class="modal hidden">
+                    <button class="close-modal">&times;</button>
+                    <div class="modal--title"><h1 class="project__modal--title">Bankist</h1></div>
+                    <p class="modal--info">
+                        It is a bank web page. It was developed as a practice of a front-end development course based on JavaScript.
+                    </p>
+                    <ul class="modal__list">
+                        <li class="modal__list--item">HTML</li>
+                        <li class="modal__list--item">SCSS</li>
+                        <li class="modal__list--item">JavaScript</li>
+                    </ul>
+                    <a href="https://github.com/LauraMG12/Bankist" target="_blank" class="btn btn--blue modal__btn">See more</a>
+                </div>
+
+                <a href="https://github.com/LauraMG12?tab=repositories" target="_blank" class="btn--text btn btn--blue">See more</a>
+            </section>
+
+            
+            <section id='about-me' class='section section--hidden section--3 hidden abut-me'>
+                <h2 class="heading--secondary section--trnsl">About me</h2>
+                <aside class='about-me__box about-me__box--info'>
+                    <img class="info__photo" src="Images/about/lmg3OK.jpeg" alt="My photo"> 
+                    <h3 class='heading--tertiary heading--tertiary-dark info__photo--title'>Laura Mañogil González</h3>
+                    <h4 class='about-me__title info__personality--title'>Personality</h4>
+                    <ul class='info__personality'>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Responsible</p>
+                        </li>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Strong-willed</p>
+                        </li>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Self-learned</p>
+                        </li>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Organized</p>
+                        </li>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Efficient</p>
+                        </li>
+                        <li class='info__personality--item'>
+                            <svg class="icon"><use xlink:href="Images/devicon-master/icomoon/symbol-defs.svg#icon-checkmark"></use></svg>
+                            <p class='personality'>Team work</p>
+                        </li>
+                    </ul>
+                    <h4 class='about-me__title info__languages--title'>Languages</h4>
+                    <ul class='info__languages'>
+                        <li class='info__languages--item'>
+                            <p class='lang'>Spanish - Native</p>
+                            <div class="language__knowledge">
+                                <div class="language__knowledge--spanish">&nbsp;</div>
+                            </div>
+                        </li>
+                        <li class='info__languages--item'>
+                            <p class='lang'>Catalan - C1</p>
+                            <div class="language__knowledge">
+                                <div class="language__knowledge--catalan">&nbsp;</div>
+                            </div>
+                        </li>
+                        <li class='info__languages--item'>
+                            <p class='lang'>English - B2</p>
+                            <div class="language__knowledge">
+                                <div class="language__knowledge--english">&nbsp;</div>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <div class='about-me__box about-me__box--work'>
+                    <h4 class='about-me__title'>About me</h4>
+                    <div> 
+                        <p class=biography__paragraph>"I am a self-taught web developer who is passionate about UI effects, animations and creating dynamic, intuitive and responsive user experiences. </p>
+                        <p class=biography__paragraph>On a personal level, I consider myself an organized and strong-willed person, with great attention to detail, that works well in a team.</p>
+                        <p class=biography__paragraph>My interests include front-end and full-stack development."</p>
+                    </div>
+                </div>
+                <div class='about-me__box about-me__box--education'>
+                    <h4 class='about-me__title'>Experience</h4>
+                    <div class="job1">
+                        <h3 class="heading--tertiary-dark education__title">Junior Full Stack developer - JAN CHOUEIRI MANAGEMENT AND CONSULTING SL</h3>
+                        <p class="grey-light education__date">March 2022 - Current</p>
+                        <p class='education__info'>Experience working with VueJS, NuxtJs and SCSS. Frontend testing with TDD implementation using Jest.</p>
+                    </div>
+                    <div class="self-taught">
+                        <h3 class="heading--tertiary-dark education__title">Self-taught web development</h3>
+                        <p class="grey-light education__date">October 2021 - Current</p>
+                        <p class='education__info'>I have studied web development by taking some Udemy advanced courses focused on SASS, JavaScript and VueJS, among others; where I have made some projects. I have also done some personal projects, as my portfolio. </p>
+                    </div>
+                </div>
+                <a href="Images/about/CV Laura Mañogil González (ENG).pdf" target="_blank" class="CV about-me__btn btn btn--blue">Open CV</a>
+            </section>
+
+
+            <footer id="contact" class="section section--4 contact">
+                <div class="contact__decoration">
+                    <h2 class="heading--secondary section--trnsl">Contact</h2>
+                    <div class="logo logo--big" >L</div>
+                    <div class="contact__icon-box">       
+                        <div>
+                            <a class="contact__icon-link" href="mailto:laura.lmg12@gmail.com" target="_blank">                         
+                                <svg
+                                    class=" contact__icon-item contact__icon-item--mail"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    stroke="rgb(255,255,255)"
+                                    stroke-width="2.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                  </svg>
+                                <p class="contact__icon-information">Start meeting</p>  
+                            </a>
+                        </div>   
+                        <div>
+                            <a class="contact__icon-link" href="https://github.com/LauraMG12?tab=repositories" target="_blank"> 
+                                <svg class="contact__icon-item"><use xlink:href="Images/icomoon/symbol-defs.svg#icon-github"></use></svg>
+                                <p class="contact__icon-information">Check my projects</p>  
+                            </a>
+                        </div>
+                        <div>
+                            <a class="contact__icon-link" href="https://www.linkedin.com/in/laura-ma%C3%B1ogil-gonz%C3%A1lez-30489b14a/" target="_blank"> 
+                                <svg class="contact__icon-item"><use xlink:href="Images/icomoon/symbol-defs.svg#icon-linkedin"></use></svg>
+                                <p class="contact__icon-information">More information</p>  
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__meet-container">
+                        <img class="contact__meet-image" src="Images/undraw svg/undraw_code_typing_re_p8b9.svg" alt="meeting" alt="Meeting icon">
+                        <p class="contact__copyright">Laura Mañogil González <span class="contact__copyright--blue">©2022</span></p>
+                    </div>
+                   
+                </div>
+            </footer>
+
+
+        </main>
+
+        <script src="myScript.js"></script>
+
+    </body>
+</html>
+
+

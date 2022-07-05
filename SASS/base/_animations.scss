@@ -1,0 +1,102 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes span {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes moveUpSpan {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem) scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem) scale(1);
+  }
+}
+
+@keyframes appearFromBlack {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg) translateY(-50%);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-50%) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes highlight {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: $shadow;
+    background-color: rgba($color-grey-light-1, 0.1);
+  }
+
+  50% {
+    transform: translateY(-2rem) scale(1.05);
+    box-shadow: $shadow-big;
+    background-color: rgba($color-grey-light-1, 0.3);
+  }
+
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: $shadow;
+    background-color: rgba($color-grey-light-1, 0.1);
+  }
+}

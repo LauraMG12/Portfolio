@@ -1,0 +1,217 @@
+.navigation {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 7rem;
+  background-color: rgba($color-black, 1);
+  box-shadow: $shadow;
+
+  display: flex;
+  justify-content: space-between;
+
+  transition: all 0.3s linear;
+
+  &.sticky {
+    background-color: rgba($color-grey-light-1, 1);
+    box-shadow: $shadow-big;
+  }
+
+  .logo {
+    margin-top: -1.5rem;
+    margin-left: 10rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: 4rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &--item {
+      display: inline-block;
+      cursor: pointer;
+      padding: 1.5rem 3rem;
+      text-decoration: none;
+      position: relative;
+
+      font-size: $font-big;
+      font-weight: $font-wheight-bold;
+
+      @media only screen and (max-width: $bp-medium) {
+        display: none;
+      }
+
+      &:hover .navigation__list--item-visible1 {
+        animation: disappear 0.5s ease forwards;
+      }
+
+      &:hover .navigation__list--item-invisible {
+        animation: appear 0.5s ease forwards;
+      }
+
+      &-visible1 {
+        color: $color-grey-light-2;
+      }
+
+      &-visible2 {
+        color: $color-grey-dark-2;
+      }
+
+      &-visibleBlue {
+        color: $color-primary-dark;
+      }
+
+      &-invisible {
+        position: absolute;
+        font-size: $font-big;
+        font-weight: $font-wheight-bold;
+        color: $color-primary-dark;
+        opacity: 0;
+      }
+
+      &-btn {
+        display: none;
+        margin: 0 2.5rem 2.5rem 0;
+
+        @media only screen and (max-width: $bp-medium) {
+          display: inline-block;
+        }
+      }
+    }
+
+    &--flags {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-right: 2rem;
+      height: 100%;
+
+      .flag {
+        width: 3rem;
+        cursor: pointer;
+        transition: transform 0.1s linear;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &--button1 {
+      color: $color-grey-light-2;
+      background-color: transparent;
+      border: none;
+      transform: scale(2.5, 2);
+
+      position: fixed;
+      z-index: 2000;
+
+      &:hover {
+        color: $color-white;
+        font-weight: $font-wheight-medium;
+        cursor: pointer;
+      }
+    }
+
+    &--button2 {
+      color: $color-grey-dark-1;
+      background-color: transparent;
+      border: none;
+      transform: scale(2.5, 2);
+
+      position: fixed;
+      z-index: 2000;
+
+      &:hover {
+        color: $color-grey-dark-2;
+        font-weight: $font-wheight-medium;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__background {
+    position: fixed;
+    height: 0;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      134deg,
+      $color-primary,
+      $color-primary-darkest
+    );
+    z-index: 1000;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__list2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+    width: 100vw;
+  }
+
+  &__item {
+    margin: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      font-size: 3rem;
+      font-weight: $font-wheight-medium;
+      padding: 1rem 2rem;
+      color: $color-white;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-white 50%
+      );
+      background-size: 225%;
+      transition: all 0.4s;
+
+      & label {
+        cursor: pointer;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 2.5rem;
+      }
+      @media only screen and (max-width: $bp-minimum) {
+        font-size: 2rem;
+      }
+
+      span {
+        margin-right: 1.5rem;
+        display: inline-block;
+      }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: $color-primary-dark;
+      transform: translateX(1rem);
+    }
+  }
+
+  &__checkbox:checked ~ &__background {
+    transform: scale(80);
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 100%;
+  }
+}
